@@ -4,8 +4,8 @@
 # Description: Casino game with two mini-games – Slot Machine and Bomb Defusal
 
 import random  # For random selection of symbols and codes
-import time  # For tracking the countdown timer
-import Codes  # Custom module containing possible bomb codes
+import time # For tracking the countdown timer
+import codes  # Custom module containing possible bomb codes
 
 
 # Function to get a valid game selection from the user
