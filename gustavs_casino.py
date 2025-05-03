@@ -49,25 +49,27 @@ def slot_machine_spin():
 
     # Check for winning combinations
     if result == ["7", "7", "7"]:
-        print("JACKPOT! YEEHAW") # Win case 1
+        print("JACKPOT! YEEHAW")  # Win case 1
     elif result == ["🍒", "🍒", "🍒"]:
-        print("You got a small win!") # Win case 2
+        print("You got a small win!")  # Win case 2
     elif result == ["💎", "💎", "💎"]:
-        print("BLING BLING! YOU’RE THE REAL THING!") # Win case 3 
+        print("BLING BLING! YOU’RE THE REAL THING!")  # Win case 3
     elif result == ["🔔", "🔔", "🔔"]:
-        print("DING DING DING. WE GOT A WINNER!") # Win case 4
+        print("DING DING DING. WE GOT A WINNER!")  # Win case 4
     else:
-        print("Fun fact: 99 percent of gamblers quit before they win big.") # Losing case
+        print(
+            "Fun fact: 99 percent of gamblers quit before they win big."
+        )  # Losing case
 
 
 # Function for the Bomb Defusal game
 def bomb_defusal_round():
-    correct_code = random.choice( # Randomize correct code
-        list(codes.codes.keys()) # Source from codes file using keys() function
+    correct_code = random.choice(  # Randomize correct code
+        list(codes.codes.keys())  # Source from codes file using keys() function
     )  # Choose a random correct code
     print("Guess the code to defuse the bomb. You have 20 seconds")
     print("Available codes:")
-    for code in codes.codes.keys(): 
+    for code in codes.codes.keys():
         print(code)
 
     start_time = time.time()  # Record the start time
